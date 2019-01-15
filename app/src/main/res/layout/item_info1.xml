@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="3dp"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_content_info1"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                android:text="党的十八大以来，以习近平同志为核心的党中央坚定推进全面从严治党，党内政治生活展现新气象，党内政治生态明显好转。但“全面从严治党永远在路上”，从巡视监督、日常监督发现的问题看，一些领导干部贯彻新形势下党内政治生活若干准则还存在温差、落差、偏差。比如，落实“两个维护”，空喊口号，不用心、不务实、不尽力，搞形式主义、虚于应付；比如，贯彻党中央决策部署，依然存在打折扣、搞变通、做选择的情况，有的甚至敷衍了事、一拖再拖；比如，对打着领导干部旗号的违规干预行为，不讲原则、主动投机，甚至慷公家之慨向领导干部家属亲友输送利益。凡此种种无不表明，严肃党内政治生活，最重要的是知行合一；全面从严治党，最根本的是令行禁止。" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/image_info1"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/tv_imagedesc_info1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/image_info1"
+                    android:background="#E0EDEDED"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="三论学习贯彻习近平十九届中纪委三次全会讲话精神" />
+
+                <TextView
+                    android:id="@+id/time_info1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_imagedesc_info1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="2019-1-18"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

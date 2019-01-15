@@ -10,9 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
-import com.squareup.picasso.Picasso;
 import com.zhengyuan.recyclerview.atapter.RecyclerViewAdapter;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -23,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mButtonGrid;
     private Button mButton;
     private Button mLoadNetImage;
+    private Button mButtonDiffItems;
     //item 显示所需
     private String[] title = {"你的脸上云淡风轻，谁也不知道你的牙咬得有多紧",
             "你走路带着风，谁也不知道你膝盖上仍有曾摔伤的淤青",
@@ -47,11 +46,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mButtonGrid = (Button) findViewById(R.id.btn_grid);
         mButton = (Button) findViewById(R.id.btn);
         mLoadNetImage = findViewById(R.id.btn_load_network_image);
+        mButtonDiffItems = findViewById(R.id.btn_diff_items);
         mButtonLinearLayout.setOnClickListener(this);
         mButtonGrid.setOnClickListener(this);
         mButton.setOnClickListener(this);
         mButtonLinearLayoutHorizatol.setOnClickListener(this);
         mLoadNetImage.setOnClickListener(this);
+        mButtonDiffItems.setOnClickListener(this);
 
         // 创建一个线性布局管理器
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
+        Intent intent;
         switch (view.getId()) {
             case R.id.btn_linearlayout:
                 // 创建一个线性布局管理器
@@ -93,8 +95,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mRecyclerView.setAdapter(new RecyclerViewAdapter(this, title, pic));
                 break;
             case R.id.btn_load_network_image:
-                Intent intent = new Intent();
+                intent = new Intent();
                 intent.setClass(this, LoadNetworkIamgeActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btn_diff_items:
+                intent = new Intent();
+                intent.setClass(this, LoadDiffItemsActivity.class);
                 startActivity(intent);
                 break;
 

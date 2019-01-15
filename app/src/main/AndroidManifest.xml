@@ -25,6 +25,10 @@
             android:name=".LoadNetworkIamgeActivity"
             android:launchMode="singleTask" />
 
+        <activity
+            android:name=".LoadDiffItemsActivity"
+            android:launchMode="singleTask" />
+
     </application>
 
 </manifest>

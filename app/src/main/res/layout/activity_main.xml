@@ -5,7 +5,6 @@
     android:orientation="vertical">
 
 
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_list"
         android:layout_width="match_parent"
@@ -20,20 +19,26 @@
 
         <Button
             android:id="@+id/btn_linearlayout"
+            style="@style/btn_nomal_style"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="线性(垂直)" />
+
+            android:text="线性(垂直)"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/btn_linearlayout_horizatol"
+            style="@style/btn_nomal_style"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="线性(水平)" />
+            android:text="线性(水平)"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/btn_grid"
+            style="@style/btn_nomal_style"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -41,16 +46,29 @@
 
         <Button
             android:id="@+id/btn"
+            style="@style/btn_nomal_style"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="瀑布流" />
+            android:text="瀑布流"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/btn_load_network_image"
+            style="@style/btn_nomal_style"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="网络图片" />
+            android:text="网络图片"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_diff_items"
+            style="@style/btn_nomal_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="不同item一起加载"
+            android:textSize="12sp" />
     </LinearLayout>
 </LinearLayout>

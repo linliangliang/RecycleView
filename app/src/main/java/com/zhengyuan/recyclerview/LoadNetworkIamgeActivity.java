@@ -106,13 +106,13 @@ public class LoadNetworkIamgeActivity extends Activity {
                     @Override
                     public void run() {
                         //long beginTime = System.currentTimeMillis();//记录开始加载信息时间
-                        //模拟加载3秒
+                        //模拟加载1秒
                         try {
-                            sleep(3000);
+                            sleep(1000);
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
-                        //更新数据源
+                        //更新数据源，随意添加两张图片
                         //initData();
                         for (int i = 2; i < 4; i++) {
                             waterFallItemEntities.add(0, new WaterFallItemEntity("一个人吃饭，一个人睡觉，一个人发呆。然而你却能一个人下班，一个人乘地铁，一个人上楼，一个人吃饭，一个人睡觉，一个人发呆。很多人离开另外一个人，就没有自己。而你却一个人，度过了所有。你的孤独，虽败犹荣。"
@@ -156,7 +156,6 @@ public class LoadNetworkIamgeActivity extends Activity {
                         }
                     }, 1);
                 }
-
             }
 
             @Override
