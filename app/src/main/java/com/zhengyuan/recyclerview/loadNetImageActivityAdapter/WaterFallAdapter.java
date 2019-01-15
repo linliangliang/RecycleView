@@ -109,4 +109,9 @@ public class WaterFallAdapter extends RecyclerView.Adapter<WaterFallAdapter.View
         }
     }
 
+
+    public void AddFooterItem(List<WaterFallItemEntity> footer) {
+        mItemEntitys.addAll(footer);
+        notifyDataSetChanged();
+    }
 }
