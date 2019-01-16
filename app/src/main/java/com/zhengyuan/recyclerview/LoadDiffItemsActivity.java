@@ -72,37 +72,5 @@ public class LoadDiffItemsActivity extends Activity implements View.OnClickListe
             info3.setTitle("插播一条广告，哈哈哈哈哈哈哈");
             datas.add(info3);
         }
-
-        /*Info1 info1 = new Info1();
-        info1.setmContent("种类1");
-        info1.setmImagedesc("右边");
-        info1.setmTime("2019-1-18");
-        info1.setLeft_icon_id(R.mipmap.ic_launcher);
-
-
-        Info1 info3 = new Info1();
-        info3.setCenter_str("种类2");
-        info3.setRight_str("右边2");
-        info3.setLeft_icon_id(R.mipmap.ic_launcher);
-
-        Info2 info4 = new Info2();
-        info4.setTitle("卡片2");
-
-        Info1 info5 = new Info1();
-        info5.setCenter_str("种类2");
-        info5.setRight_str("右边2");
-        info5.setLeft_icon_id(R.mipmap.ic_launcher);
-
-        *//*Info3 info3=new Info3();
-        info3.setCenter_str("3");
-        info3.setRight_str("右边");
-        info3.setLeft_icon_id(R.mipmap.ic_launcher);*//*
-
-        datas.add(info1);
-        datas.add(info2);
-        datas.add(info3);
-        datas.add(info4);
-        datas.add(info5);*/
-        /*datas.add(info3);*/
     }
 }
